@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>属性选择器案例分析</title>
+	<style>
+		h1[id] { color: red; }
+		h1[id][class] {	font-size: 17px;}
+		input[type="text"] {background-color: purple;}
+	</style>
+</head>
+<body>
+	<h1>中国足球出现了</h1>
+	<h1 id="aside-title" class="aside-msg">中国足球终于又没有出现</h1>
+	<input type="text">
+	<input type="password">
+</body>
+</html>
