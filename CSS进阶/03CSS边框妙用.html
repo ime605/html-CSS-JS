@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>边框妙用</title>
+	<style>
+		img {
+			width: 200px;
+			height: 200px;
+
+			/*去掉默认的边框，兼容性最好的做法*/
+			border: 0 none;
+		}
+		* {
+			padding: 0; margin: 0;
+		}
+		.box {
+			width: 0px;
+			height: 0px;
+			border: 100px solid transparent;/*透明色*/
+			border-bottom-color: green;
+			border-top: 0 none;
+			/*background-color: blue;*/
+		}
+		.matrix {
+			width: 40px;
+			height: 100px;
+			background-color: brown;
+			margin-left: 80px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="../img/logo.png" alt="">
+
+		<!-- 用border属性，绘制一个三角形 -->
+		<div class="box">
+			
+		</div>		
+		<div class="box">
+			
+		</div>
+		<div class="box">
+			
+		</div>
+		<div class="matrix">
+			
+		</div>
+	</div>
+</body>
+</html>
